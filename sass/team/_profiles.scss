@@ -1,0 +1,51 @@
+.profiles__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.profiles__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+}
+
+.profiles__list .profiles__item + .profiles__item {
+  margin-left: 10px;
+}
+
+.profiles__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $logo-color;
+  }
+
+  &:hover .profiles__icon,
+  &:focus .profiles__icon {
+    fill: $white-color;
+  }
+}
+
+.profiles__icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

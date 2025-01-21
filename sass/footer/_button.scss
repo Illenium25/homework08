@@ -1,0 +1,73 @@
+.footer-form-area {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 93px;
+}
+
+.footer-form-title {
+  color: $white-color;
+  font-family: $text;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.button-input-foot {
+  display: flex;
+}
+
+.footer-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+  margin: 0;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+}
+
+.footer-button {
+  margin: 0;
+  padding: 0;
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-left: 12px;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: $logo-color;
+
+    cursor: pointer;
+
+    font-family: $text;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    text-align: center;
+  }
+
+  &__icon {
+    display: block;
+    fill: $white-color;
+    width: 24px;
+    height: 24px;
+  }
+}

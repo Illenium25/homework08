@@ -1,0 +1,46 @@
+textarea {
+  resize: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: $text;
+  color: $text-color;
+  background: $white-color;
+}
+
+.header-container {
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer-container {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title {
+  color: $text-color;
+  text-align: center;
+  font-family: $text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  /*  */
+  margin-top: 0;
+  margin-bottom: 0;
+}
