@@ -1,6 +1,6 @@
 .clients {
-  padding-bottom: 93px;
-  padding-top: 93px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .client-title {
@@ -9,22 +9,14 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin: -15px;
-  }
+  margin: -15px;
 }
 
 .clients__item {
-  @media screen and (max-width: 767px) {
-    margin: 15px;
-  }
+  margin: 15px;
 }
 
 .clients__link {
@@ -34,13 +26,10 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   outline: none;
+  width: 210px;
+  height: 92px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (max-width: 767px) {
-    width: 210px;
-    height: 92px;
-  }
 
   &:hover,
   &:focus {
@@ -58,10 +47,4 @@
   height: 60px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__list .clients__item + .clients__item {
-    margin-left: 30px;
-  }
 }
