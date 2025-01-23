@@ -1,0 +1,57 @@
+textarea {
+  resize: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: $text;
+  color: $text-color;
+  background: $white-color;
+}
+
+.header-container {
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.footer-container {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title {
+  color: $text-color;
+  text-align: center;
+  font-family: $text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  /*  */
+  margin-top: 0;
+  margin-bottom: 0;
+}

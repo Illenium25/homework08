@@ -1,8 +1,7 @@
 .footer-form-area {
-  display: flex;
   padding: 0;
   margin: 0;
-  margin-left: 93px;
+  text-align: center;
 }
 
 .footer-form-title {
@@ -13,21 +12,27 @@
   letter-spacing: 0.03em;
 
   margin: 0;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
 .button-input-foot {
-  display: flex;
 }
 
 .footer-input {
+  display: block;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
+
   height: 50px;
+  width: 450px;
 
   padding: 15px 16px;
   margin: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
@@ -48,7 +53,6 @@
     width: 200px;
     height: 50px;
     padding: 0;
-    margin-left: 12px;
 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: $logo-color;
@@ -62,6 +66,11 @@
     letter-spacing: 0.06em;
     color: $white-color;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__icon {

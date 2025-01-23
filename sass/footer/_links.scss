@@ -1,5 +1,8 @@
 .official-pages {
-  margin-left: 70px;
+  margin-top: 60px;
+
+  @media screen and (max-width: 767px) {
+  }
 
   &__title {
     color: $white-color;
@@ -9,14 +12,18 @@
 
     margin-bottom: 20px;
     margin-top: 0;
+    text-align: center;
   }
 }
 
 .page__list {
   list-style: none;
-  display: flex;
   padding: 0;
   margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page__item {
