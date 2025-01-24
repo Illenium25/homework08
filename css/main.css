@@ -19,6 +19,7 @@ textarea {
 }
 
 .container {
+  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -439,15 +440,12 @@ textarea {
   padding: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .team__list .team__item + .team__item {
-    margin-top: 30px;
-  }
+.team__list .team__item + .team__item {
+  margin-top: 30px;
 }
+
 .team__picture {
   display: block;
-  width: 450px;
-  height: 460px;
 }
 
 .team__info {
@@ -599,11 +597,7 @@ textarea {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-@media screen and (max-width: 767px) {
-  .footer-box {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .studio-footer {
@@ -744,14 +738,10 @@ textarea {
   width: 450px;
   padding: 15px 16px;
   margin: 0;
+  margin-bottom: 20px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
-}
-@media screen and (max-width: 767px) {
-  .footer-input {
-    margin-bottom: 20px;
-  }
 }
 
 .footer-button {
@@ -785,12 +775,8 @@ textarea {
   letter-spacing: 0.06em;
   color: #fff;
   text-align: center;
-}
-@media screen and (max-width: 767px) {
-  .footer-button__form {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-button__icon {
   display: block;
