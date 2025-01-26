@@ -565,6 +565,7 @@ textarea {
 
 .clients__item {
   margin: 15px;
+  width: calc((100% - 60px) / 2);
 }
 
 .clients__link {
