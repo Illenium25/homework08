@@ -28,20 +28,29 @@
   padding: 0;
   margin: 0;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
   &__item {
     display: block;
-    margin: 0;
-    padding-right: 0;
-    padding-left: 0;
+    margin: 15px;
+    padding: 0;
     background-size: auto;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+    }
   }
 
   &__block {
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
-    width: 450px;
+
     height: 120px;
     display: flex;
     justify-content: center;
@@ -72,9 +81,9 @@
     color: $second-color;
     font-family: $text;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 0;
   }

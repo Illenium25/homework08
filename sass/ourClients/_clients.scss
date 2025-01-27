@@ -13,11 +13,12 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  gap: 30px;
+  margin: -15px;
 }
 
 .clients__item {
   flex-basis: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 .clients__link {

@@ -24,6 +24,21 @@ textarea {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .footer-container {
   background: #2f303a;
@@ -237,8 +252,8 @@ textarea {
   background: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/phone-hero/Header\ img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/phone-hero/Header\ img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero/hero-phone@1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-phone@1.jpg);
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
@@ -247,8 +262,20 @@ textarea {
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/phone-hero/Header\ img@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/phone-hero/Header\ img@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero/hero-phone@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-phone@2.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero/hero-tablet@1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-tablet@1.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero/hero-tablet@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-tablet@2.jpg);
   }
 }
 .hero__title {
@@ -257,6 +284,8 @@ textarea {
   font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 26px;
+  line-height: 162%;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   /*  */
   display: block;
@@ -265,6 +294,8 @@ textarea {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  width: 360px;
+  height: 84px;
 }
 .hero__button {
   border: none;
@@ -317,19 +348,32 @@ textarea {
   padding: 0;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 .advantages__item {
   display: block;
-  margin: 0;
-  padding-right: 0;
-  padding-left: 0;
+  margin: 15px;
+  padding: 0;
   background-size: auto;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: calc((100% - 60px) / 2);
+  }
 }
 .advantages__block {
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  width: 450px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,9 +408,9 @@ textarea {
   color: #757575;
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -375,7 +419,7 @@ textarea {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
@@ -444,6 +488,23 @@ textarea {
   list-style: none;
   margin-bottom: 0;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .team__list .team__item + .team__item {
@@ -562,12 +623,13 @@ textarea {
       flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  gap: 30px;
+  margin: -15px;
 }
 
 .clients__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
       flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
 }
 
 .clients__link {
