@@ -1,6 +1,10 @@
 .advantages-section {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .hide-title {
@@ -23,6 +27,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages .advantages__item + .advantages__item {
+    margin-left: 30px;
+  }
+}
+
 .advantages {
   list-style: none;
   padding: 0;
@@ -34,15 +44,22 @@
     margin: -15px;
   }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
   &__item {
     display: block;
-    margin: 15px;
+
     padding: 0;
     background-size: auto;
     background-repeat: no-repeat;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
   }
 
