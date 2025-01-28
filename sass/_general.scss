@@ -75,3 +75,15 @@ textarea {
   margin-top: 0;
   margin-bottom: 30px;
 }
+
+.portfolio {
+  min-width: 480px;
+  background: $white-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+    margin-top: 94px;
+  }
+}
