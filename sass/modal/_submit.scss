@@ -29,6 +29,16 @@
   }
 }
 
+.checkbox__info {
+  font-family: $text;
+  font-weight: 400;
+  font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+  color: $second-color;
+}
+
 .checkbox-icon {
   display: flex;
   justify-content: center;

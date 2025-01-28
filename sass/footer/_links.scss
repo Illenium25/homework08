@@ -1,7 +1,6 @@
 .official-pages {
-  margin-top: 60px;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
   }
 
   &__title {
@@ -9,10 +8,15 @@
     font-family: $text;
     font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
     margin-bottom: 20px;
     margin-top: 0;
-    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 }
 

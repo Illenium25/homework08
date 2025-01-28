@@ -46,6 +46,7 @@
       url(/images/hero/hero-desktop@1.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
 
     @media screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
