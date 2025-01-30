@@ -16,6 +16,15 @@ textarea {
 .header-container {
   min-width: 480px;
   border-bottom: 1px solid #ececec;
+
+  position: relative;
+}
+
+.head-container {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .container {
