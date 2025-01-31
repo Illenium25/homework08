@@ -120,8 +120,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
-    margin-bottom: 94px;
-    margin-top: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
