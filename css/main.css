@@ -162,7 +162,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 48px;
+  padding: 40px 42px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -185,10 +185,76 @@ textarea {
   color: #fff;
 }
 
-.mobile-menu {
+.navigation-mob__list {
+  list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.navigation-mob__list .navigation-mob__item + .navigation-mob__item {
+  margin-top: 32px;
+}
+
+.navigation-mob__link {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.navigation-mob__link.current {
+  color: #2196f3;
+}
+
+.contacts-mob__list {
   list-style: none;
+  margin-top: 200px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.contacts-mob__list .contacts-mob__item + .contacts-mob__item {
+  margin-top: 32px;
+}
+
+.contacts-mob__link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+}
+.contacts-mob__link:hover, .contacts-mob__link:focus {
+  color: #2196f3;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+}
+
+.mobile-pages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.mobile-pages__list .mobile-pages__item + .mobile-pages__item {
+  margin-left: 20px;
+}
+
+.mobile-pages__link {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .logo {

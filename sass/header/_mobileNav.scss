@@ -1,0 +1,22 @@
+.navigation-mob__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-mob__list .navigation-mob__item + .navigation-mob__item {
+  margin-top: 32px;
+}
+
+.navigation-mob__link {
+  text-decoration: none;
+  font-family: $text;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: $text-color;
+}
+
+.navigation-mob__link.current {
+  color: $logo-color;
+}
