@@ -1,0 +1,108 @@
+.footer-form-area {
+  padding: 0;
+  margin: 0;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.footer-form-title {
+  color: $white-color;
+  font-family: $text;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.button-input-foot {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-input {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  height: 50px;
+  width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
+  padding: 15px 16px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+}
+
+.footer-button {
+  margin: 0;
+  padding: 0;
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: $logo-color;
+
+    cursor: pointer;
+
+    font-family: $text;
+    font-weight: 700;
+    font-size: 16px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    letter-spacing: 0.06em;
+    color: $white-color;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      margin-left: 12px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    fill: $white-color;
+    width: 24px;
+    height: 24px;
+  }
+}

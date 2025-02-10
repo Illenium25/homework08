@@ -1,0 +1,99 @@
+textarea {
+  resize: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: $text;
+  color: $text-color;
+  background: $white-color;
+}
+
+.header-container {
+  min-width: 480px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+
+.head-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.container {
+  min-width: 480px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.footer-container {
+  min-width: 480px;
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.tablet-footer {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    display: flex;
+  }
+}
+
+.title {
+  color: $text-color;
+  text-align: center;
+  font-family: $text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  /*  */
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.portfolio {
+  background: $white-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}

@@ -1,0 +1,74 @@
+.contacts-header__list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-header__list .contacts-header__item + .contacts-header__item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header__list .contacts-header__item + .contacts-header__item {
+    margin-left: 40px;
+  }
+}
+
+.contacts-header__link {
+  color: $second-color;
+  font-family: $text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-decoration: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $logo-color;
+    color: $logo-color;
+    font-family: $text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+}
+
+.contacts-header__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.mail {
+  width: 16px;
+  height: 12px;
+}
+
+.phone {
+  width: 10px;
+  height: 16px;
+}

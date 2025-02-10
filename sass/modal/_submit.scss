@@ -1,0 +1,86 @@
+.checkbox-modal {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  color: $second-color;
+  font-family: $text;
+  font-weight: 400;
+  font-size: 12px;
+
+  margin-left: 7px;
+}
+
+.checkbox {
+  appearance: none;
+
+  &:focus + .checkbox-icon {
+    border-color: $logo-color;
+  }
+
+  &:checked + .checkbox-icon {
+    border-color: $logo-color;
+    background-color: $logo-color;
+  }
+}
+
+.checkbox__info {
+  font-family: $text;
+  font-weight: 400;
+  font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+  color: $second-color;
+}
+
+.checkbox-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid $second-color;
+  border-radius: 4px;
+
+  &__check {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.checkbox-link {
+  color: $logo-color;
+}
+
+.button-modal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: $logo-color;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  color: $white-color;
+  font-family: $text;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+.contacts-mob__list {
+  list-style: none;
+  margin-top: 200px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.contacts-mob__list .contacts-mob__item + .contacts-mob__item {
+  margin-top: 32px;
+}
+
+.contacts-mob__link {
+  font-family: $text;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $second-color;
+
+  &:hover,
+  &:focus {
+    color: $logo-color;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+  }
+}

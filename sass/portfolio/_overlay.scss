@@ -1,0 +1,30 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  padding: 63px 24px;
+
+  &__info {
+    color: $white-color;
+    font-family: $text;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    line-height: 1.55556;
+  }
+}
+
+.project__item:hover .overlay,
+.project__item:focus .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
